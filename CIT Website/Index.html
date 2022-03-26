@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>CIT Website</title>
+<link rel="stylesheet" href="CIT Website.css">
+</head>
+<body>
+  <body style="background-color:rgb(75, 159, 170);">
+   <div class="parallax">
+      <div class="page-title">Coimbatore Institute of Technology</div>
+   </div>
+   <div class='nav-brand'>  
+      <img src='images/CIT.png' alt='Official logo' width='130px'  height='100px'> 
+    </a> 
+   </div>
+   <div class="menu" id="sticky">
+    <ul class="menu-ul">
+    <a href="#Home" class="a-menu"><li><b>Home</b></li></a>
+    <a href="About Us.html" class="a-menu"><li><b>About Us</b></li></a>
+    <a href="Department.html" class="a-menu"><li><b>Department</b></li></a>
+    <a href="Placement.html" class="a-menu"><li><b>Placement</b></li></a>
+    </ul>
+    </div>
+    <div class ="image">
+    <img class="mySlides" src="images/Home.jpeg" class="center">
+    </div>
+    <div class ="image2">
+    <img class="mySlides" src="images/Home2.jpg" class="center">
+  </div>
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>  
+</body>
+</html>
